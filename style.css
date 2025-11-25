@@ -1,0 +1,14 @@
+header{
+    width: 1440px ;
+    height: 510px ;
+    background-image: url(imagens/backheader.png)
+}
+#logoname{
+    font-size: large;
+}
+#localizacao{
+    background-color: #B1D5EE;
+}
+footer{
+    background-color: #1B4245;
+}
