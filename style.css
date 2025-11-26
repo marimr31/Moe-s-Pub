@@ -59,6 +59,27 @@ h2{
     margin: 0 auto;
 }
 
+.container-sobre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+.sobre {
+    flex: 1 1 200px; 
+
+    text-align: center;
+    border: 0px;
+    padding: 10px;
+}
+
+.sobre img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 #localizacao{
     background-color: #B1D5EE;
 }
