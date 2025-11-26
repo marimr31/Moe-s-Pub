@@ -30,7 +30,7 @@ body{
 }
 
 .site-header{
-  height:280px;
+  height:500px;
   background-image: url("imagens/backheader.png");
   background-size:cover;
   background-position:center;
@@ -64,7 +64,7 @@ body{
 }
 
 .logo{
-  width:58px;
+  width:80px;
   height:auto;
   border-radius:50%;
   background:white;
@@ -84,7 +84,7 @@ body{
   text-decoration:none;
   margin-left:18px;
   font-weight:600;
-  font-size:14px;
+  font-size:16px;
   padding:6px 8px;
   border-radius:6px;
   transition: background .18s, color .18s;
@@ -100,14 +100,18 @@ body{
 
 .section-title{
   color:var(--dark);
-  font-size:20px;
+  font-size:24px;
   font-weight:700;
   margin:0 0 18px 0;
   text-transform:uppercase;
   letter-spacing:0.8px;
 }
 
-.promos .container{padding-top:20px;padding-bottom:20px}
+.promos .container{
+  padding-top:20px;
+  padding-bottom:20px
+}
+
 .promos-grid{
   display:grid;
   grid-template-columns: 1fr 420px;
@@ -119,21 +123,32 @@ body{
   display:grid;
   grid-template-columns: repeat(2, 1fr);
   gap:18px;
+  background: none;
+  border-radius:10px;
 }
 
 .card{
   display:block;
   width:100%;
   border-radius:10px;
-  box-shadow:0 6px 18px rgba(16,20,20,0.06);
-  background:var(--card-bg);
+  box-shadow: none;
+  background:none;
   object-fit:cover;
   height:220px;
 }
 
-.card.small{ height:200px; padding:12px; background:#eaf6ff; object-fit:contain; }
+.card.small{ 
+  height:200px; 
+  padding:0; 
+  background:none; 
+  object-fit:contain;
+  box-shadow: none;
+ }
 
-.card.big{ height:100%; max-height:420px; object-fit:cover; }
+.card.big{ 
+  height:100%; 
+  max-height:420px; 
+  object-fit:cover; }
 
 .about{
   background:var(--card-bg);
@@ -141,6 +156,7 @@ body{
   box-shadow:0 8px 30px rgba(18,56,59,0.05);
   padding:28px 0;
   margin-top:28px;
+  background-color: #f5f6f7
 }
 
 .about-grid{
@@ -148,7 +164,8 @@ body{
   grid-template-columns: 320px 1fr;
   gap:30px;
   align-items:start;
-  padding:12px 0 28px 0;
+  padding:30px 0 28px 0;
+  background-color: #f5f6f7;
 }
 
 .about-img{
@@ -159,7 +176,12 @@ body{
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
-.about-text p{ color:var(--muted); margin-bottom:12px; font-size:15px }
+.about-text p{ 
+  color:var(--muted); 
+  margin-bottom:12px; 
+  font-size:15px 
+}
+
 .btn-primary{
   display:inline-block;
   margin-top:8px;
@@ -181,24 +203,53 @@ body{
 .location-grid{
   display:grid;
   grid-template-columns: 1fr 340px;
-  gap:28px;
+  gap:12px;
   align-items:start;
-  background:#ddeff6;
+  background:#B1D5EE;
   padding:28px;
   border-radius:10px;
 }
 
-.map{ width:100%; max-width:420px; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.06) }
-.address{ font-size:14px; color:var(--muted); margin-top:10px }
+.map{ 
+  width:100%; 
+  max-width:420px; 
+  border-radius:8px; 
+  box-shadow:0 6px 18px rgba(0,0,0,0.06) 
+}
+.address{ 
+  font-size:14px; 
+  color:var(--muted);
+  margin-top:10px 
+}
 
-.contact-card{ padding:12px }
-.contact-items{ display:flex; flex-direction:column; gap:12px; margin-top:8px }
-.contact-row{ display:flex; align-items:center; gap:12px; font-weight:600 }
-.contact-row a{ color:var(--dark); text-decoration:none }
-.contact-row .icon{ background:var(--card-bg); padding:8px 10px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.06) }
+.contact-card{ 
+  padding:2px 
+}
+.contact-items{ 
+  display:flex; 
+  flex-direction:column; 
+  gap:12px; 
+  margin-top:8px 
+}
+.contact-row{ 
+  display:flex; 
+  align-items:center; 
+  gap:12px; 
+  font-weight:600 
+}
+.contact-row a{ 
+  color:var(--dark); 
+  text-decoration:none 
+}
+.contact-row .icon{ 
+  background:var(--card-bg); 
+  padding:8px 10px; 
+  border-radius:8px; 
+  box-shadow:0 4px 12px rgba(0,0,0,0.06) 
+}
 
 .moe-cartoon{
-  width:160px;
+  width:200px;
   position:relative;
   margin-top:14px;
   display:block;
@@ -252,7 +303,7 @@ body{
 }
 
 .logo-mini {
-    width: 50px;
+    width: 80px;
 }
 
 .titulo-topo {
@@ -278,7 +329,7 @@ body{
 }
 
 .cardapio-img-full {
-    width: 65%;
+    width: 30%;
     border-radius: 8px;
     box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
