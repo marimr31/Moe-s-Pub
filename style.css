@@ -1,83 +1,301 @@
-<!DOCTYPE html>
-<html lang="PT-BR">
-    <head>
-        <meta charset="UTF-8">
-        <title>Moe's Pub</title>
-        <link rel="stylesheet" href="style.css"
-        <meta name="keywords" content="bar,moe pub,brasília,DF,pub,cerveja,asa norte,restaurante,narguile">
-        <meta name="description" content="descrição do bar">
-    </head>
-    <body>
-    
-        <header>
-            <img src="imagens/logo.png"id="logo" />
-            <h1 id="logoname ">MOE'S PUB BAR E RESTAURANTE</h1>
-            <nav id="navegador">
-                <a href="cardapio.html">CARDÁPIO</a>
-                <a href="#localizacao">LOCALIZAÇÃO</a>
-                <a href="#sobre">SOBRE</a>
-                <a href="#promocao">PROMOÇÕES</a> 
-            </nav>
-        </header>
-        <h2>PROMOÇÕES</h2>
-            <div class="container-promocoes">
-                        <div class="container-promocoes1">
-                            <div class="promocao">
-                                <img src="promo5.png" alt="Promoção Caipirinha">
-                            </div>
+:root{
+  --bg: #f5f6f7;
+  --accent: #d94f2a;
+  --dark: #12383b;
+  --muted: #6b7a7b;
+  --card-bg: #ffffff;
+  --yellow: #f6d26b;
+  --radius: 10px;
+  --container: 1100px;
+  --gap: 24px;
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
 
-                            <div class="promocao">
-                                <img src="promo3.png" alt="Promoção Espetinhos">
-                            </div>
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:#222;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+}
 
-                        </div>
+.container{
+  width:calc(100% - 48px);
+  max-width:var(--container);
+  margin:0 auto;
+  padding:40px 0;
+}
 
-                        <br/>
+.site-header{
+  height:280px;
+  background-image: url("imagens/backheader.png");
+  background-size:cover;
+  background-position:center;
+  position:relative;
+  color:white;
+}
 
-                        <div class="container-promocoes2">
+.site-header::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.25) 60%);
+  pointer-events:none;
+}
 
-                            <div class="promocao">
-                                <img src="promo4.png" alt="Promoção Litrão Antarctica">
-                            </div>
+.header-top{
+  position:relative;
+  z-index:2;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:18px 24px;
+  max-width:var(--container);
+  margin:0 auto;
+}
 
-                            <div class="promocao">
-                                <img src="promo2.png" alt="Promoção Pitu">
-                            </div>
+.brand{
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
 
-                        </div>
+.logo{
+  width:58px;
+  height:auto;
+  border-radius:50%;
+  background:white;
+  padding:4px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.25);
+}
 
-                        <div class="promocao">
-                                <img src="promo1.png" alt="Promoção Happy Hour">
-                            </div>
-                    </div
+.brand-title{
+  font-weight:700;
+  letter-spacing:0.6px;
+  font-size:16px;
+  text-transform:uppercase;
+}
 
+.main-nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:18px;
+  font-weight:600;
+  font-size:14px;
+  padding:6px 8px;
+  border-radius:6px;
+  transition: background .18s, color .18s;
+}
 
-        <div class="container" id="localizacao">
-            <h2>LOCALIZAÇÃO</h2>
-            <img src="imagens/maps.png" id="maps">
-            <p>CLN 410 Bloco E Loja 08 - Asa Norte, Brasília, Brazil 70297-400</p>
-             <h2>CONTATO</h2>
-                <a href="">@moespuboficial</a>
-                <a href="">(+55)61991278593</a>
-        </div>
+.main-nav a:hover{
+  background:rgba(255,255,255,0.12);
+}
 
-         <div class="container-sobre">
-                    <h2>SOBRE</h2>
-                    <div class="sobre">
-                                  <img src="imagens/bar.png" id="bar" />
-                    </div>
+.section{
+  background:transparent;
+}
 
-                    <div class="sobre">
-                                <P>O Moe's Pub é o seu novo ponto favorito para curtir momentos incríveis! Um bar simples e intimista, com aquele clima acolhedor que faz você se sentir em casa desde a primeira visita. Aqui, cada detalhe foi pensado para criar um ambiente perfeito para encontros descontraídos, boas risadas e aquela pausa merecida no fim do dia.</P>
-                    <br/>
-                    <p>E o melhor? No Moe's Pub você encontra comida clássica de boteco feita com capricho, porções generosas e preços que cabem no bolso. É o lugar ideal para reunir a galera, saborear petiscos irresistíveis e aproveitar bebidas sempre geladas. Venha conhecer o Moe's Pub, onde a simplicidade vira o seu melhor programa!</p>
-                    </div>
-                 
-             </div>
-              <button href="cardapio.html">VER CARDÁPIO</button>
-        <footer>
-            <p>...</p>
-        </footer>
+.section-title{
+  color:var(--dark);
+  font-size:20px;
+  font-weight:700;
+  margin:0 0 18px 0;
+  text-transform:uppercase;
+  letter-spacing:0.8px;
+}
 
-    </body>
-</html>
+.promos .container{padding-top:20px;padding-bottom:20px}
+.promos-grid{
+  display:grid;
+  grid-template-columns: 1fr 420px;
+  gap:30px;
+  align-items:start;
+}
+
+.small-cards{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:18px;
+}
+
+.card{
+  display:block;
+  width:100%;
+  border-radius:10px;
+  box-shadow:0 6px 18px rgba(16,20,20,0.06);
+  background:var(--card-bg);
+  object-fit:cover;
+  height:220px;
+}
+
+.card.small{ height:200px; padding:12px; background:#eaf6ff; object-fit:contain; }
+
+.card.big{ height:100%; max-height:420px; object-fit:cover; }
+
+.about{
+  background:var(--card-bg);
+  border-radius:12px;
+  box-shadow:0 8px 30px rgba(18,56,59,0.05);
+  padding:28px 0;
+  margin-top:28px;
+}
+
+.about-grid{
+  display:grid;
+  grid-template-columns: 320px 1fr;
+  gap:30px;
+  align-items:start;
+  padding:12px 0 28px 0;
+}
+
+.about-img{
+  width:100%;
+  border-radius:10px;
+  height:100%;
+  object-fit:cover;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.about-text p{ color:var(--muted); margin-bottom:12px; font-size:15px }
+.btn-primary{
+  display:inline-block;
+  margin-top:8px;
+  padding:12px 18px;
+  background:var(--yellow);
+  color:#222;
+  font-weight:700;
+  border-radius:28px;
+  text-decoration:none;
+  box-shadow: 0 6px 14px rgba(246,210,107,0.28);
+}
+
+.location{
+  margin-top:28px;
+  padding-top:28px;
+  padding-bottom:28px;
+}
+
+.location-grid{
+  display:grid;
+  grid-template-columns: 1fr 340px;
+  gap:28px;
+  align-items:start;
+  background:#ddeff6;
+  padding:28px;
+  border-radius:10px;
+}
+
+.map{ width:100%; max-width:420px; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.06) }
+.address{ font-size:14px; color:var(--muted); margin-top:10px }
+
+.contact-card{ padding:12px }
+.contact-items{ display:flex; flex-direction:column; gap:12px; margin-top:8px }
+.contact-row{ display:flex; align-items:center; gap:12px; font-weight:600 }
+.contact-row a{ color:var(--dark); text-decoration:none }
+.contact-row .icon{ background:var(--card-bg); padding:8px 10px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.06) }
+
+.moe-cartoon{
+  width:160px;
+  position:relative;
+  margin-top:14px;
+  display:block;
+  margin-left:auto;
+}
+
+.site-footer{
+  background:var(--dark);
+  color:white;
+  padding:20px 0;
+  margin-top:28px;
+  text-align:center;
+}
+
+@media (max-width: 980px){
+  .promos-grid{ grid-template-columns: 1fr; }
+  .about-grid{ grid-template-columns: 1fr; }
+  .location-grid{ grid-template-columns: 1fr; }
+  .header-top{ padding:12px 18px; }
+  .brand-title{ display:none; } 
+}
+
+@media (max-width: 520px){
+  .card.small{ height:160px }
+  .card.big{ max-height:260px }
+  .logo{ width:48px }
+  .main-nav{ display:none } 
+  .container{ width:calc(100% - 32px); padding:20px 0 }
+  .section-title{ font-size:16px }
+  .moe-cartoon{ width:120px }
+}
+
+.cardapio-page {
+    background: #f4f6f6;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.cardapio-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 28px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-mini {
+    width: 50px;
+}
+
+.titulo-topo {
+    font-size: 17px;
+    font-weight: bold;
+    color: #013a3a;
+}
+
+.voltar {
+    font-size: 18px;
+    text-decoration: none;
+    color: #0d3c53;
+    font-weight: bold;
+}
+
+.voltar:hover {
+    color: #1b6f8a;
+}
+
+.cardapio-conteudo {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.cardapio-img-full {
+    width: 65%;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.page-number {
+    margin-top: 8px;
+    color: #777;
+    font-size: 14px;
+}
+
+@media (max-width: 800px) {
+    .cardapio-img-full {
+        width: 92%;
+    }
+
+    .titulo-topo {
+        font-size: 14px;
+    }
+}
+
