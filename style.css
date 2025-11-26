@@ -5,7 +5,60 @@ header{
 }
 #logoname{
     font-size: large;
+    color: #FFFFFF;
 }
+
+#navegador{
+    font-size: medium;
+    a { color: #FFFFFF; }
+    a:visited { color: #FFFFFF; }
+    a:hover { color: #B1D5EE; }
+}
+
+button{
+    background-color: #FFDE59;
+    color: #1B4245;
+}
+
+h2{
+    color: #1B4245;
+    font-size: medium;
+}
+
+.container-promocoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+.container-promocoes1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+.container-promocoes2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.promocao {
+    flex: 1 1 200px; 
+
+    text-align: center;
+    border: 1px solid #ccc; 
+    padding: 10px;
+}
+
+.promocao img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 #localizacao{
     background-color: #B1D5EE;
 }
