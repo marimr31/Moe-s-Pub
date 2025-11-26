@@ -1,88 +1,83 @@
-header{
-    width: 1440px ;
-    height: 510px ;
-    background-image: url(imagens/backheader.png)
-}
-#logoname{
-    font-size: large;
-    color: #FFFFFF;
-}
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Moe's Pub</title>
+        <link rel="stylesheet" href="style.css"
+        <meta name="keywords" content="bar,moe pub,brasília,DF,pub,cerveja,asa norte,restaurante,narguile">
+        <meta name="description" content="descrição do bar">
+    </head>
+    <body>
+    
+        <header>
+            <img src="imagens/logo.png"id="logo" />
+            <h1 id="logoname ">MOE'S PUB BAR E RESTAURANTE</h1>
+            <nav id="navegador">
+                <a href="cardapio.html">CARDÁPIO</a>
+                <a href="#localizacao">LOCALIZAÇÃO</a>
+                <a href="#sobre">SOBRE</a>
+                <a href="#promocao">PROMOÇÕES</a> 
+            </nav>
+        </header>
+        <h2>PROMOÇÕES</h2>
+            <div class="container-promocoes">
+                        <div class="container-promocoes1">
+                            <div class="promocao">
+                                <img src="promo5.png" alt="Promoção Caipirinha">
+                            </div>
 
-#navegador{
-    font-size: medium;
-    a { color: #FFFFFF; }
-    a:visited { color: #FFFFFF; }
-    a:hover { color: #B1D5EE; }
-}
+                            <div class="promocao">
+                                <img src="promo3.png" alt="Promoção Espetinhos">
+                            </div>
 
-button{
-    background-color: #FFDE59;
-    color: #1B4245;
-}
+                        </div>
 
-h2{
-    color: #1B4245;
-    font-size: medium;
-}
+                        <br/>
 
-.container-promocoes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-}
-.container-promocoes1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-}
-.container-promocoes2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-}
+                        <div class="container-promocoes2">
 
-.promocao {
-    flex: 1 1 200px; 
+                            <div class="promocao">
+                                <img src="promo4.png" alt="Promoção Litrão Antarctica">
+                            </div>
 
-    text-align: center;
-    border: 1px solid #ccc; 
-    padding: 10px;
-}
+                            <div class="promocao">
+                                <img src="promo2.png" alt="Promoção Pitu">
+                            </div>
 
-.promocao img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
+                        </div>
 
-.container-sobre {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-}
-.sobre {
-    flex: 1 1 200px; 
+                        <div class="promocao">
+                                <img src="promo1.png" alt="Promoção Happy Hour">
+                            </div>
+                    </div
 
-    text-align: center;
-    border: 0px;
-    padding: 10px;
-}
 
-.sobre img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
+        <div class="container" id="localizacao">
+            <h2>LOCALIZAÇÃO</h2>
+            <img src="imagens/maps.png" id="maps">
+            <p>CLN 410 Bloco E Loja 08 - Asa Norte, Brasília, Brazil 70297-400</p>
+             <h2>CONTATO</h2>
+                <a href="">@moespuboficial</a>
+                <a href="">(+55)61991278593</a>
+        </div>
 
-#localizacao{
-    background-color: #B1D5EE;
-}
-footer{
-    background-color: #1B4245;
-}
+         <div class="container-sobre">
+                    <h2>SOBRE</h2>
+                    <div class="sobre">
+                                  <img src="imagens/bar.png" id="bar" />
+                    </div>
+
+                    <div class="sobre">
+                                <P>O Moe's Pub é o seu novo ponto favorito para curtir momentos incríveis! Um bar simples e intimista, com aquele clima acolhedor que faz você se sentir em casa desde a primeira visita. Aqui, cada detalhe foi pensado para criar um ambiente perfeito para encontros descontraídos, boas risadas e aquela pausa merecida no fim do dia.</P>
+                    <br/>
+                    <p>E o melhor? No Moe's Pub você encontra comida clássica de boteco feita com capricho, porções generosas e preços que cabem no bolso. É o lugar ideal para reunir a galera, saborear petiscos irresistíveis e aproveitar bebidas sempre geladas. Venha conhecer o Moe's Pub, onde a simplicidade vira o seu melhor programa!</p>
+                    </div>
+                 
+             </div>
+              <button href="cardapio.html">VER CARDÁPIO</button>
+        <footer>
+            <p>...</p>
+        </footer>
+
+    </body>
+</html>
